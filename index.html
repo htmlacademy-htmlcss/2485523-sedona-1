@@ -7,10 +7,10 @@
   <body>
     <header class = "page-header">
       <nav class="navigation">
-          <a class="navigation-link-logo">
-            <img src="#" alt="Логотип сайта города Седона">
-          </a>
         <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Логотип города Седона</a>
+          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Главная</a>
           </li>
@@ -87,7 +87,7 @@
       </section>
 
         <section class="service">
-          <h3 class="visually-hidden">Сервис</h3>
+          <h3 class="vuaislly-hidden">Сервис</h3>
           <p>Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
           <p>Опытный персонал и качественное обслуживание!</p>
            <ul class="service">
@@ -112,19 +112,50 @@
         <button class="submit" type="button">Поиск гостиниц в Седоне</button>
       </article>
 
-      <p class="form">Подпишитесь на рассылку Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <label>
-         <input type="text" name="search" id="total-field" value="Ваш e-mail">Подписаться
-        </label>
-      </form>
+      <section class="newsletter">
+        <h2 class="page-footer-title">Подпишитесь на рассылку Только полезная информация и никакого спама, честное бойскаутское!</h2>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="newsletter-email"></label>
+            <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">
+              <span class="visually-hidden">Подписаться</span>
+            </button>
+          </form>
+        </section>
 
 
-
-      <footer>
-
+      <footer class="page-footer">
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">+7 (812) 812-12-12</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">.html academy</span>
+              </a>
+            </li>
+            </ul>
+          </section>
       </footer>
     </main>
-
-
   </body>
 </html>
