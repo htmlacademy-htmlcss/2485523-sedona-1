@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format(woff2);
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  background: #ffffff;
+  font-size: 18px;
+  line-height:118%;
+}
+
+.page-header {
+  background: #ffffff;
+  color: #000000;
+}
+.navigation-link {
+  line-height: 24px;
+  color: inherit;
+  font-weight: 700;
+  text-align: center;
+}
+.navigation-link-search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  display:block;
+  width: 20px;
+  height:20px;
+  font-size: 0;
+}
+
+.navigation-link-favorites {
+  background-image: url("../images/like.svg");
+  background-repeat: no-repeat;
+  display:block;
+  width: 20px;
+  height:20px;
+  font-size: 0;
+}
+
+.hero {
+  font-size: 0;
+  text-align: center;
+}
+
+.about-town-title {
+font-size: 30px;
+line-height:120%;
+text-align: center;
+text-transform: uppercase
+
+}
+.about-town-reasons {
+font-size: 22px;
+text-align: center;
+}
+
+.advantages-item {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 400px;
+height: 385px;
+background: #82B3D3;
+text-align: center;
+}
