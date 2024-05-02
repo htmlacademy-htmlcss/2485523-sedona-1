@@ -37,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <a class="head-button" href="#search">Хочу сюда</a>
+        <a class="button button-brown" href="#search">Хочу сюда!</a>
       </header>
 
       <main>
@@ -48,10 +48,6 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden"> Главная</span>
-              </a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-link-arrow" href="#">
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -109,8 +105,8 @@
                 </li>
               </ul>
             </fieldset>
-            <span>Применить</span>
-            <span>Сбросить</span>
+            <button type="submit" class="button button-blue">Применить</button>
+            <button type="reset" class="button">Сбросить</button>
           </form>
         </section>
        </div>
@@ -147,15 +143,15 @@
             </a>
             <span class="product-card-hotel">Гостиница</span>
             <span class="product-card-price">от 4000 ₽</span>
-            <a class="detail" href="#">Подробнее</a>
-            <a class="product-card-button button-elect" href="#">в избранном</a>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button type="submit" class="button button-blue">в избранное</button>
             <div>
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             </div>
-            <a class="product-card-button button-rating" href="#">Рейтинг: 8,5 </a>
+            <span>Рейтинг: 8,5 </span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -164,15 +160,15 @@
             </a>
             <span class="product-card-hotel">Гостиница</span>
             <span class="product-card-price">от 5000 ₽</span>
-            <a class="detail" href="#">Подробнее</a>
-            <a class="product-card-button button-elect-green" href="#">в избранном</a>
+            <a class= "button button-brown" href="#">Подробнее</a>
+            <button type="submit" class="button button-green">в избранном</button>
             <div>
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
            </div>
-            <a class="product-card-button button-rating" href="#">Рейтинг: 9.2 </a>
+            <span>Рейтинг: 9.2 </span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -181,14 +177,14 @@
             </a>
             <span class="product-card-hotel">Гостиница</span>
             <span class="product-card-price">от 2500 ₽</span>
-            <a class="detail" href="#">Подробнее</a>
-            <a class="product-card-button button-elect" href="#">в избранном</a>
+            <a class="button button-brown " href="#">Подробнее</a>
+            <button type="submit" class="button button-blue">в избранное</button>
             <div>
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда"  />
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             </div>
-            <a class="product-card-button button-rating" href="#">Рейтинг: 6,9 </a>
+            <span>Рейтинг: 6,9 </span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -197,13 +193,13 @@
             </a>
             <span class="product-card-hotel">Гостиница</span>
             <span class="product-card-price">от 1500 ₽</span>
-            <a class="detail" href="#">Подробнее</a>
-            <a class="product-card-button button-elect" href="#">в избранном</a>
+            <a class="button button-brown" href="#">Подробнее</a>
+            <button type="submit" class="button button-blue">в избранное</button>
             <div>
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             <img class="star" src="images/star.svg" width="18" height="17" alt="Заполненная звезда" />
             </div>
-            <a class="product-card-button button-rating" href="#">Рейтинг: 5,0 </a>
+            <span>Рейтинг: 5,0 </span>
           </li>
         </ul>
       </div>
@@ -225,15 +221,15 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <section class="newsletter">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-ds">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="newsletter-email">e-mail</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
-          </form>
-        </section>
+      </section>
+      <section class="newsletter newsletter-catalog">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-ds">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">e-mail</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button button-blue button-big" type="submit">Подписаться</button>
+        </form>
       </section>
       </main>
 
