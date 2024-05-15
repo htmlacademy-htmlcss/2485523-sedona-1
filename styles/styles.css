@@ -137,6 +137,7 @@ body {
   display: inline-block;
   text-align: center;
   border: none;
+  border-radius: 4px;
 }
 
 .button:focus{
@@ -547,6 +548,15 @@ body {
   text-decoration: none;
 }
 
+.link-phone:hover,
+.linl-phone:focus {
+  color: #756157;
+}
+
+.link-phone:active{
+  color: #D6D0CD;
+}
+
 .link-html {
   background-image: url("../images/html-academy.svg");
   background-repeat: no-repeat;
@@ -555,6 +565,17 @@ body {
   height: 33px;
 }
 
+.link-html:focus .html-icon {
+  fill: #756157;
+}
+
+.link-html:hover .html-icon {
+  fill: #756157;
+}
+
+.link-html:active .html-icon{
+  fill: #D6D0CD;
+}
 /* catalog */
 
 .main-header {
@@ -715,7 +736,8 @@ body {
   display: block;
   background-repeat: no-repeat;
   background-size: 16px 14px;
-  border: 2px solid #000000;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
   height: 48px;
   width: 48px;
   background-position:center center;
@@ -725,6 +747,17 @@ body {
 .button-catalog-cards:not(:last-child) {
   margin-right: 8px;
 }
+.button-catalog-cards:focus {
+  border: 2px solid #68A2CA;
+}
+.button-catalog-cards:hover,
+.button-catalog-cards:active  {
+  border: 2px solid #000000;
+}
+
+
+
+
 
 .button-card {
   background-image: url("../images/cards.svg");
@@ -802,6 +835,7 @@ body {
   text-align: center;
   line-height:37px;
   margin-left: auto;
+  border-radius: 4px;
 
 }
 
@@ -835,8 +869,10 @@ span {
   margin-top:40px;
 }
 
+
 .pagination-item {
   margin-right: 8px;
+
 }
 
 .pagination-link {
@@ -853,9 +889,32 @@ span {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
+  border-radius: 4px;
 }
 
+.pagination-link:focus,
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+}
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.pagination-current:focus,
+.pagination-current:hover {
+  background-color: #F2F2F2;
+}
+
+.pagination-current:active {
+  background-color:  #F2F2F2;
+}
+
+.pagination-clear {
+  background-color: #ffffff;
+  color: #000000;
 }
