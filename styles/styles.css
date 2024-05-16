@@ -104,12 +104,14 @@ body {
   text-transform: capitalize;
   font-size: 20px;
   text-decoration: none;
+  position: relative;
 }
 
 
 .navigation-item {
   position: relative;
 }
+
 .notification-badge{
   display: block;
   font-size: 10px;
@@ -123,6 +125,13 @@ body {
   top:0;
 }
 
+.navigation-link-current::before {
+  content: "";
+  position: absolute;
+  width: 68px;
+  border-bottom: 2px solid #756257;
+  bottom: -1px;
+}
 
 .button {
   color: #ffffff;
@@ -293,6 +302,21 @@ body {
   text-align: center;
   padding-bottom: 30px;
   margin: 30px;
+  position: relative;
+}
+
+.advantages-title::after{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #A8ACAF;
+  bottom: 0;
+  left: 31%;
+}
+
+.advantages-title-blue::after{
+  background-color: #A7CAE0;
 }
 
 .advantages-description {
@@ -500,7 +524,6 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
 }
 
 .footer-social-item{
@@ -604,23 +627,29 @@ body {
   margin-bottom: 40px;
 }
 
-.breadcrumbs-link-home{
+.breadcrumbs-link-home {
   display: block;
   width: 20px;
   height: 20px;
   background-position: center;
   background-image: url("../images/home-catalog.svg");
   background-repeat: no-repeat;
-
 }
 
+.breadcrumbs-item [href]:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item [href]:active {
+  opacity: 0.3;
+}
 .breadcrumbs-item{
   position: relative;
   padding-right: 28px;
 }
 
 .breadcrumbs-item:not(:first-child)::before {
-  content: '';
+  content: "";
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   display: inline-block;
@@ -755,10 +784,6 @@ body {
   border: 2px solid #000000;
 }
 
-
-
-
-
 .button-card {
   background-image: url("../images/cards.svg");
 
@@ -866,13 +891,20 @@ span {
   display: flex;
   flex-direction: row;
   padding: 0px;
-  margin-top:40px;
+  margin-top:80px;
+  position: relative;
 }
 
+.pagination::before{
+  content: "";
+  position: absolute;
+  width: 1060px;
+  border: 1px solid #E6E6E6;
+  top: -40px;
+}
 
 .pagination-item {
   margin-right: 8px;
-
 }
 
 .pagination-link {
