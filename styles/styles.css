@@ -14,7 +14,6 @@
   font-display: swap;
 }
 
-
 *,
 *::before,
 *::after {
@@ -23,7 +22,6 @@
 
 html{
 height: 100%;
-
 }
 
 
@@ -45,7 +43,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
 }
 
 .visually-hidden {
@@ -75,8 +72,8 @@ body {
 }
 .navigation-logo{
   position: absolute;
-  top:0;
-  left: 6px;
+  top: 0;
+  left: 0;
 }
 
 .navigation-list {
@@ -91,7 +88,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 22px;
 
 }
 
@@ -108,7 +105,6 @@ body {
   position: relative;
 }
 
-
 .navigation-item {
   position: relative;
 }
@@ -123,8 +119,8 @@ body {
   border-radius: 50%;
   text-align: center;
   position: absolute;
-  left:15px;
-  top:0;
+  left:23px;
+  top:2px;
 }
 
 .navigation-link-current::before {
@@ -168,7 +164,6 @@ body {
   background-color:#615048;
 }
 
-
 .button-header {
   width: 160px;
 }
@@ -209,7 +204,6 @@ body {
   border-radius: 10px;
   font-size: 20px;
   line-height: 24px;
-
 }
 
 .button-clear {
@@ -226,7 +220,6 @@ body {
 .button-clear:disabled {
   opacity: 0.1;
 }
-
 
 .main-container {
   flex-grow: 1;
@@ -250,27 +243,32 @@ body {
   background-position: center center;
 }
 
+.navigation-link-search,
+.navigation-link-favorites {
+  padding: 22px 12px;
+  width: 44px;
+}
+
 .notification-badge {
   width: 20px;
   height: 20px;
 }
+
 .hero {
   font-size: 0;
   text-align: center;
 }
 
-/* content-section */
 .content-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 69px 0px;
+  padding: 63px 0;
   margin-bottom: 21px;
 }
 
 .content-title {
-  width: 640px;
+  width: 620px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -318,7 +316,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 103px 85px;
+  padding: 102px 85px;
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -329,7 +327,7 @@ body {
   font-size: 24px;
   text-align: center;
   padding-bottom: 30px;
-  margin: 30px;
+  margin: 0 27px 30px 27px;
   position: relative;
 }
 
@@ -339,8 +337,8 @@ body {
   width: 60px;
   height: 2px;
   background-color: #A8ACAF;
-  bottom: 0;
-  left: 31%;
+  bottom: 2px;
+  left: 57px;
 }
 
 .advantages-title-blue::after{
@@ -351,7 +349,6 @@ body {
   order: 2;
   align-self: stretch;
   flex-grow: 0;
-  line-height: 21px;
   text-align: center;
   line-height: 117%;
   color: #333333;
@@ -373,15 +370,13 @@ body {
   object-fit: cover;
 }
 
-
 .service-title {
   width: 505px;
   font-size: 30px;
   line-height: 120%;
   text-transform: uppercase;
   text-align: center;
-  margin: 64px auto 20px auto;
-
+  margin: 59px auto 20px auto;
 }
 
 .service-subtitle {
@@ -391,7 +386,6 @@ body {
   margin: 0 auto;
   color: #333333;
   margin-bottom: 64px;
-
 }
 
 .service-list {
@@ -413,11 +407,13 @@ body {
 .service-item:nth-child(2) {
   background-color: #ffffff;
 }
+
 .service-item-icon-home {
   background-image: url(../images/home.svg);
   background-repeat: no-repeat;
   background-position: 163px 81px, 163px 232px;
 }
+
 .service-item-icon-food {
   background-image: url(../images/food.svg);
   background-repeat: no-repeat;
@@ -427,7 +423,6 @@ body {
   background-image: url(../images/gift.svg);
   background-repeat: no-repeat;
   background-position: 163px 81px, 163px 232px;
-
 }
 
 .service-text {
@@ -439,15 +434,12 @@ body {
   margin-top: 0;
 }
 
-
 .service-description {
   line-height: 117%;
   text-align: center;
   color: #333333;
   margin: 0;
 }
-
-
 
 .promo {
   display: flex;
@@ -478,7 +470,6 @@ body {
   margin-bottom: 54px;
 }
 
-/* footer */
 .page-footer-title {
   font-size: 30px;
   line-height: 120%;
@@ -492,7 +483,6 @@ body {
   color: #ffffff;
 }
 
-/* newsletter */
 .newsletter {
   padding: 96px 258px 104px 258px;
   width: 1200px;
@@ -510,7 +500,6 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
-
 }
 
 .newsletter-ds {
@@ -559,8 +548,6 @@ body {
   background-color: #F2F2F2;
 }
 
-
-/* page-footer */
 .page-footer {
   display: flex;
   width: 1060px;
@@ -649,6 +636,8 @@ body {
   fill: #D6D0CD;
 }
 
+
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -657,6 +646,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .modal {
@@ -668,8 +661,6 @@ body {
   border-radius: 30px;
   width: 717px;
 }
-
-
 
 .modal-close-button{
   content: "";
@@ -706,10 +697,6 @@ body {
   margin:0;
 }
 
-/* .modal-container-close {
-  display: none;
-} */
-
 .bid-form {
   position: relative;
 }
@@ -733,6 +720,7 @@ body {
   right: 24px;
   opacity:0.3;
 }
+
 .check {
   width: 440px;
   height: 48px;
@@ -765,7 +753,6 @@ body {
 
 .form-text-children {
   margin: 11px 82px 11px 88px;
-
 }
 
 .date-check-in {
@@ -817,6 +804,7 @@ body {
   appearance: none;
   margin: 0;
 }
+
 .people-input-fields {
   display: flex;
 }
@@ -830,6 +818,7 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+
 .sign::before{
   content:" ";
   width: 20px;
@@ -864,8 +853,6 @@ body {
   border-bottom-right-radius:4px;
 }
 
-
-
 .tooltip {
   position: absolute;
   margin-top: 12px;
@@ -880,6 +867,7 @@ body {
   display: block;
   position: relative;
 }
+
 .tooltip-toggle::after{
   content: "";
   background-image: url("../images/arrow-black.svg");
@@ -915,8 +903,6 @@ body {
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
-
-/* catalog */
 
 .main-header {
   background-color: #457AA4;
