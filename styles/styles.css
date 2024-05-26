@@ -195,8 +195,7 @@ body {
 
 .button-larger {
   width: 376px;
-  font-size: 20px;
-  line-height: 24px;
+
 }
 
 .button-search {
@@ -314,9 +313,8 @@ body {
   width: 400px;
   min-height: 385px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 102px 85px;
+  padding: 103px 85px;
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -331,17 +329,17 @@ body {
   position: relative;
 }
 
-.advantages-title::after{
+.advantages-title::after {
   content: "";
   position: absolute;
   width: 60px;
   height: 2px;
   background-color: #A8ACAF;
-  bottom: 2px;
+  bottom: -2px;
   left: 57px;
 }
 
-.advantages-title-blue::after{
+.advantages-title-blue::after {
   background-color: #A7CAE0;
 }
 
@@ -368,6 +366,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  vertical-align: bottom;
 }
 
 .service-title {
@@ -376,7 +375,7 @@ body {
   line-height: 120%;
   text-transform: uppercase;
   text-align: center;
-  margin: 59px auto 20px auto;
+  margin: 64px auto 20px auto;
 }
 
 .service-subtitle {
@@ -422,7 +421,7 @@ body {
 .service-item-icon-gift {
   background-image: url(../images/gift.svg);
   background-repeat: no-repeat;
-  background-position: 163px 81px, 163px 232px;
+  background-position: center top 81px;;
 }
 
 .service-text {
@@ -555,18 +554,19 @@ body {
 }
 
 .footer-social-list{
-  margin: 0;
+  margin: 5px 0 5px 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  width: 142px
 }
 
-.footer-social-item{
-  padding: 0px 10px;
-}
+/* .footer-social-item{
+  padding: 0 10px;
+} */
 
 .social-item:hover .social-icon{
   fill: #68A2CA;
@@ -582,29 +582,32 @@ body {
 .social-item-vk {
   background-repeat: no-repeat;
   display: block;
-  width: 24px;
-  height: 14px;
+  width: 25px;
+  height: 15px;
+  margin: 13px 12px;
 }
 
 .social-item-tg {
   background-repeat: no-repeat;
   display: block;
   width: 18px;
-  height: 16px;
+  height: 17px;
+  margin: 12px 15px;
 }
 
 .social-item-youtube{
   background-repeat: no-repeat;
   display: block;
-  width: 22px;
-  height: 17px;
+  width: 23px;
+  height: 18px;
+  margin: 11px 10px;
 }
 
 .link-phone {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
-  margin: 0 auto;
+  margin: 5px auto 5px auto;
   text-decoration: none;
 }
 
@@ -622,6 +625,7 @@ body {
   display: block;
   width: 115px;
   height: 33px;
+  margin: 8px 0 9px 0;
 }
 
 .link-html:focus .html-icon {
@@ -646,6 +650,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  padding: 396px 282px 2574px 281px;
 }
 
 .modal-container-close {
@@ -717,7 +722,7 @@ body {
   width: 16px;
   height: 15px;
   position: absolute;
-  right: 24px;
+  right: 23px;
   opacity:0.3;
 }
 
@@ -747,6 +752,7 @@ body {
   text-transform: capitalize;
 
 }
+
 .form-text-adults {
   margin: 12px 46px 12px 0;
 }
@@ -771,8 +777,8 @@ body {
   margin: 0;
   padding: 0 20px;
   position: absolute;
-  right: 122px;
-  top: 47px;
+  right: 119px;
+  top: 52px;
 }
 
 .small-text-black {
@@ -866,6 +872,7 @@ body {
   margin: 0;
   display: block;
   position: relative;
+  right: 5px;
 }
 
 .tooltip-toggle::after{
@@ -932,11 +939,11 @@ body {
 
 .breadcrumbs-link-home {
   display: block;
-  width: 20px;
-  height: 20px;
-  background-position: center;
+  width: 13px;
+  height: 13px;
   background-image: url("../images/home-catalog.svg");
   background-repeat: no-repeat;
+  margin: 3px 0 3px 0;
 }
 
 .breadcrumbs-item [href]:hover {
@@ -960,7 +967,7 @@ body {
   height: 20px;
   position: absolute;
   top: 5px;
-  right: 110px;
+  right: 111px;
 }
 
 
@@ -1032,6 +1039,7 @@ body {
   position: absolute;
   left: 0;
 }
+
 .control-mark::before {
   content: '';
   position: absolute;
@@ -1075,6 +1083,7 @@ body {
   position: relative;
   height: 4px;
   background-color: #6E7576;
+  margin-top: 7px;
 }
 
 .range-bar {
@@ -1096,21 +1105,21 @@ body {
 
 .range-toggle:active {
   outline: 2px solid #83B3D3;
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
   top: -8px;
-  left: -1px;
+  left: 0;
 }
 
 .toggle-max {
   top: -8px;
   right: -3px;
 }
+
 .range-wrapper-inputs {
   display: flex;
-  /* justify-content: center; */
 }
 
 .catalog-filter-label {
@@ -1139,6 +1148,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .range-input {
   width: 143px;
   padding: 12px 12px 12px 20px;
@@ -1150,6 +1160,7 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
+
 .range-input-min-price {
   border-radius: 4px 0 0 4px;
 }
@@ -1157,6 +1168,7 @@ body {
 .range-input-max-price {
   border-radius: 0 4px 4px 0;
 }
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -1188,26 +1200,28 @@ body {
 }
 
 .catalog {
-  padding: 40px 70px 40px 70px;
+  padding: 48px 70px 40px 70px;
 }
 
 .catalog-header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
+  height: 49px;
+  margin-bottom: 40px;
 }
 
-.catalog-search{
+.catalog-search {
   font-size: 30px;
   line-height: 120%;
   text-transform: uppercase;
+  margin: 6px 0;
 }
 
 .sorting-container {
   display: flex;
   margin-left: auto;
-
 }
 
 .select-control {
@@ -1226,7 +1240,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: #333333
-
 }
 
 .select-control:hover {
@@ -1252,7 +1265,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 14px 12px;
   margin-left: 70px;
 }
 
@@ -1298,9 +1310,6 @@ body {
 
 }
 
-/* product-list */
-
-
 .product-list {
   display: grid;
   width: 1060px;
@@ -1320,6 +1329,10 @@ body {
 
 .product-card-link {
   text-decoration: none;
+}
+
+.product-card-image {
+  vertical-align: bottom
 }
 
 .product-card-title {
@@ -1346,7 +1359,6 @@ body {
   justify-content: space-between;
 }
 
-
 .star-rating {
   display: flex;
   flex-direction: row;
@@ -1361,7 +1373,8 @@ body {
   line-height:37px;
   margin-left: auto;
   border-radius: 4px;
-
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 .detail{
@@ -1369,7 +1382,6 @@ body {
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
-
 }
 
 .star {
@@ -1379,7 +1391,6 @@ body {
   width: 18px;
   height: 17px;
   margin-right: 6px;
-
 }
 
 span {
@@ -1390,8 +1401,8 @@ span {
   list-style: none;
   display: flex;
   flex-direction: row;
-  padding: 0px;
-  margin-top:80px;
+  padding: 0;
+  margin-top: 78px;
   position: relative;
 }
 
