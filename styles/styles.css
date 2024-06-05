@@ -1329,10 +1329,9 @@ body {
 }
 
 .button-catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
 }
 
 .button-catalog-cards {
@@ -1344,11 +1343,6 @@ body {
   height: 48px;
   width: 48px;
   background-position: center center;
-  margin-bottom: 8px;
-}
-
-.button-catalog-cards:not(:last-child) {
-  margin-right: 8px;
 }
 
 .button-catalog-cards-current {
